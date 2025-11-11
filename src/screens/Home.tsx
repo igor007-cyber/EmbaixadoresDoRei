@@ -145,102 +145,278 @@ function Home() {
       <main className="bg-white">
         <section className="min-h-screen px-4 sm:px-6 lg:px-16 py-20">
           <div className="max-w-7xl mx-auto">
+            {/* Título da Seção */}
+            <div className="text-center mb-16">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+                Conheça os Esportes dos 
+                <span className="block text-[#F6B500]">Embaixadores do Rei</span>
+              </h1>
+              <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto">
+                Oferecemos uma ampla variedade de modalidades esportivas para todas as idades e níveis de habilidade. 
+                Junte-se a nós e descubra o esporte perfeito para você! 
+                Competições emocionantes, desenvolvimento de talentos e muito mais!
+              </p>
+            </div>
+
             {/* Grid de Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              {/* Card 1 - Outreach */}
+              {/* Card 1 - Futebol */}
               <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
                 <img 
-                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&h=400&fit=crop" 
-                  alt="Outreach"
+                  src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/8106490939eee9974a0f617dfe155564.jpg" 
+                  alt="Futebol"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                  <h3 className="text-white text-3xl font-bold mb-4">Outreach</h3>
-                  <button className="text-white text-sm font-semibold hover:text-[#F6B500] transition-colors w-fit">
-                    Learn More
-                  </button>
+                  <h3 className="text-white text-3xl font-bold">Xadrez</h3>
                 </div>
               </div>
 
-              {/* Card 2 - Worship */}
+              {/* Card 2 - Vôlei */}
               <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
                 <img 
-                  src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=500&h=400&fit=crop" 
-                  alt="Worship"
+                  src="https://novasantarosa.pr.gov.br/wp-content/uploads/2024/03/maior_bubRpEBE1uVrJwlFJwknmkTHWRDGvv7K.jpg" 
+                  alt="Vôlei"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                  <h3 className="text-white text-3xl font-bold mb-4">Worship</h3>
-                  <button className="text-white text-sm font-semibold hover:text-[#F6B500] transition-colors w-fit">
-                    Learn More
-                  </button>
+                  <h3 className="text-white text-3xl font-bold">Futsal</h3>
                 </div>
               </div>
 
-              {/* Card 3 - Leadership */}
+              {/* Card 3 - Basquete */}
               <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
                 <img 
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=400&fit=crop" 
-                  alt="Leadership"
+                  src="https://clubepaineiras.org.br/wp-content/uploads/2022/05/jogadores.jpg" 
+                  alt="Basquete"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                  <h3 className="text-white text-3xl font-bold mb-4">Leadership</h3>
-                  <button className="text-white text-sm font-semibold hover:text-[#F6B500] transition-colors w-fit">
-                    Learn More
-                  </button>
+                  <h3 className="text-white text-3xl font-bold">Futebol de campo</h3>
                 </div>
               </div>
 
-              {/* Card 4 - Life Groups */}
+              {/* Card 4 - Tênis de Mesa */}
               <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
                 <img 
-                  src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=400&fit=crop" 
-                  alt="Life Groups"
+                  src="https://static.todamateria.com.br/upload/te/ni/tenis-de-mesa-og.jpg?class=ogImageSquare" 
+                  alt="Tênis de Mesa"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                  <h3 className="text-white text-3xl font-bold mb-4">Life Groups</h3>
-                  <button className="text-white text-sm font-semibold hover:text-[#F6B500] transition-colors w-fit">
-                    Learn More
-                  </button>
+                  <h3 className="text-white text-3xl font-bold">Tênis de Mesa</h3>
                 </div>
               </div>
 
-              {/* Card 5 - Youth */}
+              {/* Card 5 - Atletismo */}
               <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
                 <img 
-                  src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=500&h=400&fit=crop" 
-                  alt="Youth"
+                  src="https://media.istockphoto.com/id/184629980/pt/foto/linha-de-corredores-no-in%C3%ADcio-de-uma-faixa.jpg?s=612x612&w=0&k=20&c=FQjo8VqnveNe_YyF89k2L1B9Rb8R38LWpna3zmPrlSU=" 
+                  alt="Atletismo"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                  <h3 className="text-white text-3xl font-bold mb-4">Youth</h3>
-                  <button className="text-white text-sm font-semibold hover:text-[#F6B500] transition-colors w-fit">
-                    Learn More
-                  </button>
+                  <h3 className="text-white text-3xl font-bold">Atletismo</h3>
                 </div>
               </div>
 
-              {/* Card 6 - Kids */}
+              {/* Card 6 - Salto */}
               <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
                 <img 
-                  src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&h=400&fit=crop" 
-                  alt="Kids"
+                  src="https://conteudo.imguol.com.br/c/esporte/95/2021/07/31/alexsandro-melo-em-acao-nas-eliminatorias-do-salto-em-distancia-nas-olimpiadas-de-toquio-1627729536839_v2_1920x1285.jpg" 
+                  alt="Salto em Distância"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
-                  <h3 className="text-white text-3xl font-bold mb-4">Kids</h3>
-                  <button className="text-white text-sm font-semibold hover:text-[#F6B500] transition-colors w-fit">
-                    Learn More
-                  </button>
+                  <h3 className="text-white text-3xl font-bold">Salto</h3>
+                </div>
+              </div>
+
+              {/* Card 7 - Natação */}
+              <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
+                <img 
+                  src="https://conceitos.com/wp-content/uploads/Natacao.jpg" 
+                  alt="Natação"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 flex flex-col justify-end p-8">
+                  <h3 className="text-white text-3xl font-bold">Natação</h3>
+                </div>
+              </div>
+
+              {/* Card 8 - Handebol */}
+              <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
+                <img 
+                  src="https://images.tcdn.com.br/img/img_prod/1281743/noticia_73944177766fdd02088226.png" 
+                  alt="Handebol"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 flex flex-col justify-end p-8">
+                  <h3 className="text-white text-3xl font-bold">Dama</h3>
+                </div>
+              </div>
+
+              {/* Card 9 - Dominó */}
+              <div className="relative group overflow-hidden rounded-3xl h-80 cursor-pointer transition-transform duration-300 hover:scale-105">
+                <img 
+                  src="https://super.abril.com.br/wp-content/uploads/2018/07/521526bc865be241850004df619px-domino_game1.jpeg?quality=70&strip=info&w=619&h=440&crop=1" 
+                  alt="Dominó"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 flex flex-col justify-end p-8">
+                  <h3 className="text-white text-3xl font-bold">Dominó</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Seção Competições Bíblicas */}
+        <section className="min-h-screen px-4 sm:px-6 lg:px-16 py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto">
+            {/* Título da Seção */}
+            <div className="text-center mb-16">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+                Competições de 
+                <span className="block text-[#F6B500]">Conhecimento Bíblico</span>
+              </h1>
+              <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto">
+                Desafie seu conhecimento e aprofunde sua fé através de competições dinâmicas e envolventes. 
+                Explore diferentes categorias e teste suas habilidades bíblicas!
+              </p>
+            </div>
+
+            {/* Grid de Cards - Layout Inspirado */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              
+              {/* Coluna Esquerda - 2 Cards Grandes */}
+              <div className="lg:col-span-1 space-y-6">
+                {/* Card 1 - Conhecimentos gerais da Bíblia */}
+                <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-blue-900 to-blue-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-end p-8">
+                    <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Geral</p>
+                    <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Conhecimentos Gerais da Bíblia</h3>
+                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Explorar Agora
+                    </button>
+                  </div>
+                </div>
+
+                {/* Card 2 - Conhecimentos gerais da Organização */}
+                <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-purple-900 to-purple-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-end p-8">
+                    <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Organizacional</p>
+                    <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Conhecimentos Gerais da Organização</h3>
+                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Explorar Agora
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Coluna Central - 2 Cards Grandes */}
+              <div className="lg:col-span-1 space-y-6">
+                {/* Card 3 - Agilidade Bíblica */}
+                <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-green-900 to-green-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-end p-8">
+                    <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Velocidade</p>
+                    <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Agilidade Bíblica</h3>
+                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Explorar Agora
+                    </button>
+                  </div>
+                </div>
+
+                {/* Card 4 - Montagem Bíblica */}
+                <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-red-900 to-red-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-end p-8">
+                    <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Prática</p>
+                    <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Montagem Bíblica</h3>
+                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Explorar Agora
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Coluna Direita - 2 Cards Retangulares + Cards Menores */}
+              <div className="lg:col-span-1 space-y-6">
+                {/* Card 5 - Debate de Versículos */}
+                <div className="relative group overflow-hidden rounded-3xl h-56 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-orange-900 to-orange-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-center p-8">
+                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-2">Categoria Debate</p>
+                    <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Debate de Versículos</h3>
+                    <button className="bg-white text-black px-5 py-2 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Ver Mais
+                    </button>
+                  </div>
+                </div>
+
+                {/* Card 6 - Biografia Missionária */}
+                <div className="relative group overflow-hidden rounded-3xl h-56 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-teal-900 to-teal-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-center p-8">
+                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-2">Categoria Biografia</p>
+                    <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Biografia Missionária</h3>
+                    <button className="bg-white text-black px-5 py-2 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Ver Mais
+                    </button>
+                  </div>
+                </div>
+
+                {/* Card 7 - Biografia WAH */}
+                <div className="relative group overflow-hidden rounded-3xl h-56 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-indigo-900 to-indigo-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-center p-8">
+                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-2">Categoria Biografia</p>
+                    <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Biografia WAH</h3>
+                    <button className="bg-white text-black px-5 py-2 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Ver Mais
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cards Adicionais - Linha Inferior */}
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Card 8 - Biografia de Jesus */}
+                <div className="relative group overflow-hidden rounded-3xl h-72 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-yellow-900 to-yellow-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-end p-8">
+                    <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Especial</p>
+                    <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Biografia de Jesus</h3>
+                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Explorar Agora
+                    </button>
+                  </div>
+                </div>
+
+                {/* Card 9 - Pregador do Evangelho */}
+                <div className="relative group overflow-hidden rounded-3xl h-72 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-pink-900 to-pink-700">
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 flex flex-col justify-end p-8">
+                    <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Pregação</p>
+                    <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Pregador do Evangelho</h3>
+                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                      Explorar Agora
+                    </button>
+                  </div>
                 </div>
               </div>
 
