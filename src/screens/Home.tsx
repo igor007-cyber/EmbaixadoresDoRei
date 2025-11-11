@@ -147,9 +147,9 @@ function Home() {
           <div className="max-w-7xl mx-auto">
             {/* Título da Seção */}
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight text-blue-900">
                 Conheça os Esportes dos 
-                <span className="block text-[#F6B500]">Embaixadores do Rei</span>
+                <span className="block text-yellow-500">Embaixadores do Rei</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto">
                 Oferecemos uma ampla variedade de modalidades esportivas para todas as idades e níveis de habilidade. 
@@ -287,7 +287,7 @@ function Home() {
           <div className="max-w-7xl mx-auto">
             {/* Título da Seção */}
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight text-blue-900">
                 Competições de 
                 <span className="block text-[#F6B500]">Conhecimento Bíblico</span>
               </h1>
@@ -417,7 +417,7 @@ function Home() {
                       Explorar Agora
                     </button>
                   </div>
-                </div>
+                  </div>
               </div>
 
             </div>
@@ -961,34 +961,39 @@ function Home() {
               {/* Grupo A */}
               <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-[#F6B500]/30 rounded-2xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#F6B500]/30">
-                  <div className="w-12 h-12 bg-[#F6B500] rounded-full flex items-center justify-center">
-                    <span className="text-black text-2xl font-bold">A</span>
-                  </div>
                   <h3 className="text-white text-2xl font-bold uppercase">Group A</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      BY
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">BAYERN</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      AT
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">ATLÉTICO</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      SZ
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">SALZBURG</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      LM
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">LOKOMOTIV</span>
                   </div>
                 </div>
@@ -997,34 +1002,39 @@ function Home() {
               {/* Grupo B */}
               <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-[#F6B500]/30 rounded-2xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#F6B500]/30">
-                  <div className="w-12 h-12 bg-[#F6B500] rounded-full flex items-center justify-center">
-                    <span className="text-black text-2xl font-bold">B</span>
-                  </div>
                   <h3 className="text-white text-2xl font-bold uppercase">Group B</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-blue-900 text-xs font-bold">
-                      RM
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">REAL MADRID</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      SD
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">SHAKHTAR</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      IN
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">INTER</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      MG
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">MÖNCHENGLADBACH</span>
                   </div>
                 </div>
@@ -1033,34 +1043,39 @@ function Home() {
               {/* Grupo C */}
               <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-[#F6B500]/30 rounded-2xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#F6B500]/30">
-                  <div className="w-12 h-12 bg-[#F6B500] rounded-full flex items-center justify-center">
-                    <span className="text-black text-2xl font-bold">C</span>
-                  </div>
                   <h3 className="text-white text-2xl font-bold uppercase">Group C</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      PO
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">PORTO</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      MC
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">MAN. CITY</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-700 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      OL
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">OLYMPIACOS</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      OM
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">MARSEILLE</span>
                   </div>
                 </div>
@@ -1069,34 +1084,39 @@ function Home() {
               {/* Grupo D */}
               <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-[#F6B500]/30 rounded-2xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#F6B500]/30">
-                  <div className="w-12 h-12 bg-[#F6B500] rounded-full flex items-center justify-center">
-                    <span className="text-black text-2xl font-bold">D</span>
-                  </div>
                   <h3 className="text-white text-2xl font-bold uppercase">Group D</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      LV
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">LIVERPOOL</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-700 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      AJ
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">AJAX</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      AT
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">ATALANTA</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-yellow-600 rounded-full flex items-center justify-center text-black text-xs font-bold">
-                      MD
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">MIDTJYLLAND</span>
                   </div>
                 </div>
@@ -1105,34 +1125,39 @@ function Home() {
               {/* Grupo E */}
               <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-[#F6B500]/30 rounded-2xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#F6B500]/30">
-                  <div className="w-12 h-12 bg-[#F6B500] rounded-full flex items-center justify-center">
-                    <span className="text-black text-2xl font-bold">E</span>
-                  </div>
                   <h3 className="text-white text-2xl font-bold uppercase">Group E</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      SE
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">SEVILLA</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      CH
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">CHELSEA</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      KR
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">KRASNODAR</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-700 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      RE
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">RENNES</span>
                   </div>
                 </div>
@@ -1141,34 +1166,39 @@ function Home() {
               {/* Grupo F */}
               <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-[#F6B500]/30 rounded-2xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#F6B500]/30">
-                  <div className="w-12 h-12 bg-[#F6B500] rounded-full flex items-center justify-center">
-                    <span className="text-black text-2xl font-bold">F</span>
-                  </div>
                   <h3 className="text-white text-2xl font-bold uppercase">Group F</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      ZE
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">ZENIT</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-yellow-600 rounded-full flex items-center justify-center text-black text-xs font-bold">
-                      DO
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">DORTMUND</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      LA
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">LAZIO</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      CB
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">CLUB BRUGGE</span>
                   </div>
                 </div>
@@ -1177,34 +1207,39 @@ function Home() {
               {/* Grupo G */}
               <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-[#F6B500]/30 rounded-2xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#F6B500]/30">
-                  <div className="w-12 h-12 bg-[#F6B500] rounded-full flex items-center justify-center">
-                    <span className="text-black text-2xl font-bold">G</span>
-                  </div>
                   <h3 className="text-white text-2xl font-bold uppercase">Group G</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      JU
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">JUVENTUS</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center text-yellow-400 text-xs font-bold">
-                      BA
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">BARCELONA</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      DK
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">DYNAMO KYIV</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      FE
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">FERENCVÁROS</span>
                   </div>
                 </div>
@@ -1213,34 +1248,39 @@ function Home() {
               {/* Grupo H */}
               <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-[#F6B500]/30 rounded-2xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#F6B500]/30">
-                  <div className="w-12 h-12 bg-[#F6B500] rounded-full flex items-center justify-center">
-                    <span className="text-black text-2xl font-bold">H</span>
-                  </div>
                   <h3 className="text-white text-2xl font-bold uppercase">Group H</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      PS
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">PARIS</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      MU
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">MANCHESTER UTD</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-red-700 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      LE
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">LEIPZIG</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                      IB
-                    </div>
+                    <img 
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
+                      alt="Logo" 
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
                     <span className="text-white font-semibold">ISTANBUL BAŞAKŞEHIR</span>
                   </div>
                 </div>
@@ -1254,6 +1294,225 @@ function Home() {
                 Os grupos são formados automaticamente com base na quantidade de times cadastrados. 
                 O sistema distribui equitativamente os participantes para garantir competições balanceadas.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Torneios em Andamento */}
+        <section className="relative py-20 bg-white overflow-hidden">
+          {/* Background Effects */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(246,181,0,0.05),transparent_50%)]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(6,182,212,0.05),transparent_50%)]"></div>
+          
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <div className="inline-block mb-4">
+                <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#F6B500]/20 border border-[#F6B500]/50 rounded-full text-[#F6B500] text-sm font-semibold">
+                  <i className="bx bx-trending-up text-lg"></i>
+                  AO VIVO AGORA
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 text-blue-900">
+                TORNEIOS EM
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#F6B500] via-[#FFD700] to-[#F6B500]">
+                  ANDAMENTO
+                </span>
+              </h2>
+              <p className="text-gray-700 text-lg md:text-xl max-w-2xl mx-auto">
+                Participe dos torneios mais disputados! Mostre suas habilidades e conquiste prêmios incríveis.
+              </p>
+            </div>
+
+            {/* Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              {/* Card 1 - DAER */}
+              <Link to="/torneios" className="group relative">
+                <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-gray-800 hover:border-[#F6B500]/80 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-[#F6B500]/30">
+                  {/* Imagem */}
+                  <div className="relative h-96 overflow-hidden bg-gradient-to-br from-purple-900/30 to-black flex items-center justify-center p-6">
+                    <img 
+                      src="https://images.tcdn.com.br/img/img_prod/1151656/medalha_embaixadores_do_rei_futebol_169_1_5370ddda9a8fd52077af8bbb9b89157b.jpeg"
+                      alt="DAER Championship"
+                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                  </div>
+
+                  {/* Conteúdo */}
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded">
+                        TORNEIO
+                      </span>
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#F6B500] transition-colors">
+                      Torneio DAER 
+                    </h3>
+                    
+                    <p className="text-white/60 text-sm mb-4 line-clamp-2">
+                      O torneio mais prestigiado da temporada. Competidores de elite disputam o título supremo.
+                    </p>
+
+                    {/* Stats */}
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-1 text-[#F6B500]">
+                          <i className="bx bxs-star"></i>
+                          <span className="text-sm font-bold">4.95</span>
+                        </div>
+                        <div className="flex items-center gap-1 text-white/60">
+                          <i className="bx bx-user"></i>
+                          <span className="text-sm">30 Embaixadas</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Button */}
+                    <div className="pt-4 border-t border-white/10">
+                      <button className="w-full px-4 py-3 bg-gradient-to-r from-[#F6B500] to-[#FFD700] text-black font-bold rounded-lg hover:shadow-lg hover:shadow-[#F6B500]/50 transition-all transform hover:scale-105">
+                        ENTRAR NO TORNEIO
+                        <i className="bx bx-right-arrow-alt ml-1"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Glow Effect */}
+                  <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#F6B500]/20 to-transparent"></div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Card 2 - ERER */}
+              <Link to="/torneios" className="group relative">
+                <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-gray-800 hover:border-cyan-500/80 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/30">
+                  {/* Imagem */}
+                  <div className="relative h-96 overflow-hidden bg-gradient-to-br from-cyan-900/30 to-black flex items-center justify-center p-6">
+                    <img 
+                      src="https://i.imgur.com/9O5Eozd.png"
+                      alt="ERER Battle Royale"
+                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                  </div>
+
+                  {/* Conteúdo */}
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="px-2 py-1 bg-cyan-500/20 text-cyan-400 text-xs font-semibold rounded">
+                        TORNEIO
+                      </span>
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                      Torneio ERER 
+                    </h3>
+                    
+                    <p className="text-white/60 text-sm mb-4 line-clamp-2">
+                      Batalha épica onde apenas os melhores sobrevivem. Estratégia e habilidade são essenciais.
+                    </p>
+
+                    {/* Stats */}
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-1 text-cyan-400">
+                          <i className="bx bxs-star"></i>
+                          <span className="text-sm font-bold">4.87</span>
+                        </div>
+                        <div className="flex items-center gap-1 text-white/60">
+                          <i className="bx bx-user"></i>
+                          <span className="text-sm">50 embaixadas</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Button */}
+                    <div className="pt-4 border-t border-white/10">
+                      <button className="w-full px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all transform hover:scale-105">
+                        ENTRAR NO TORNEIO
+                        <i className="bx bx-right-arrow-alt ml-1"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Glow Effect */}
+                  <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/20 to-transparent"></div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Card 3 - ONIER */}
+              <Link to="/torneios" className="group relative">
+                <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-gray-800 hover:border-green-500/80 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30">
+                  {/* Imagem */}
+                  <div className="relative h-96 overflow-hidden bg-gradient-to-br from-green-900/30 to-black flex items-center justify-center p-6">
+                    <img 
+                      src="https://images.tcdn.com.br/img/img_prod/1151656/180_trofu_catraca_metal_escudo_er_1_20250813155741_724222885fbc.jpeg"
+                      alt="ONIER Arena"
+                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                  </div>
+
+                  {/* Conteúdo */}
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-semibold rounded">
+                        TORNEIO
+                      </span>
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
+                      Copa ONIER
+                    </h3>
+                    
+                    <p className="text-white/60 text-sm mb-4 line-clamp-2">
+                      Perfeito para jogadores intermediários. Mostre seu potencial e suba no ranking.
+                    </p>
+
+                    {/* Stats */}
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-1 text-green-400">
+                          <i className="bx bxs-star"></i>
+                          <span className="text-sm font-bold">4.72</span>
+                        </div>
+                        <div className="flex items-center gap-1 text-white/60">
+                          <i className="bx bx-user"></i>
+                          <span className="text-sm">90 Embaixadas</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Button */}
+                    <div className="pt-4 border-t border-white/10">
+                      <button className="w-full px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-green-500/50 transition-all transform hover:scale-105">
+                        ENTRAR NO TORNEIO
+                        <i className="bx bx-right-arrow-alt ml-1"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Glow Effect */}
+                  <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-t from-green-500/20 to-transparent"></div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center">
+              <Link 
+                to="/torneios" 
+                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#F6B500] via-[#FFD700] to-[#F6B500] text-black text-lg font-black rounded-full hover:shadow-2xl hover:shadow-[#F6B500]/50 transition-all transform hover:scale-105 group"
+              >
+                VER TODOS OS TORNEIOS
+                <i className="bx bx-right-arrow-alt text-2xl group-hover:translate-x-2 transition-transform"></i>
+              </Link>
             </div>
           </div>
         </section>
