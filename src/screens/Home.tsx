@@ -26,30 +26,30 @@ function Home() {
           {/* Logo e Menu agrupados */}
           <div className="flex items-center gap-8 lg:gap-12">
             {/* Logo */}
-            <a href="/" className="flex items-center">
-              <img 
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s" 
-                alt="Embaixadores do Rei Logo" 
+            <Link to="/" className="flex items-center">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAQQaJAJhuwSBNqXym91Tkm42ONxzO44jVg&s"
+                alt="Embaixadores do Rei Logo"
                 className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain rounded-full"
               />
-            </a>
+            </Link>
 
             {/* Menu Desktop */}
             <ul className="hidden lg:flex gap-6 xl:gap-8 text-sm font-medium">
               <li>
-                <a href="/" className="text-white hover:text-cyan-300 transition-colors">
+                <Link to="/" className="text-white hover:text-cyan-300 transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/sobre" className="text-white hover:text-cyan-300 transition-colors">
+                <Link to="/sobre" className="text-white hover:text-cyan-300 transition-colors">
                   Sobre
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/torneios" className="text-white hover:text-cyan-300 transition-colors">
+                <Link to="/torneios" className="text-white hover:text-cyan-300 transition-colors">
                   Torneios
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -131,12 +131,12 @@ function Home() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 lg:mb-16 w-full sm:w-auto">
-            <a 
-              href="/torneios" 
+            <Link
+              to="/torneios"
               className="px-6 md:px-8 py-3 text-sm font-medium bg-white/10 hover:bg-white/20 rounded-full transition-all border border-white/30 backdrop-blur-sm text-center"
             >
               Ver Torneios
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -298,17 +298,17 @@ function Home() {
             </div>
 
             {/* Grid de Cards - Layout Inspirado */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+
               {/* Coluna Esquerda - 2 Cards Grandes */}
-              <div className="lg:col-span-1 space-y-6">
+              <div className="lg:col-span-2 space-y-6">
                 {/* Card 1 - Conhecimentos gerais da Bíblia */}
                 <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-blue-900 to-blue-700">
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Geral</p>
                     <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Conhecimentos Gerais da Bíblia</h3>
-                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                    <button className="bg-white text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Explorar Agora
                     </button>
                   </div>
@@ -320,7 +320,7 @@ function Home() {
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Organizacional</p>
                     <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Conhecimentos Gerais da Organização</h3>
-                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                    <button className="bg-white text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Explorar Agora
                     </button>
                   </div>
@@ -328,14 +328,14 @@ function Home() {
               </div>
 
               {/* Coluna Central - 2 Cards Grandes */}
-              <div className="lg:col-span-1 space-y-6">
+              <div className="lg:col-span-2 space-y-6">
                 {/* Card 3 - Agilidade Bíblica */}
                 <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-green-900 to-green-700">
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Velocidade</p>
                     <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Agilidade Bíblica</h3>
-                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                    <button className="bg-white text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Explorar Agora
                     </button>
                   </div>
@@ -347,7 +347,7 @@ function Home() {
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Prática</p>
                     <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Montagem Bíblica</h3>
-                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                    <button className="bg-white text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Explorar Agora
                     </button>
                   </div>
@@ -355,38 +355,38 @@ function Home() {
               </div>
 
               {/* Coluna Direita - 2 Cards Retangulares + Cards Menores */}
-              <div className="lg:col-span-1 space-y-6">
+              <div className="lg:col-span-1 space-y-4">
                 {/* Card 5 - Debate de Versículos */}
-                <div className="relative group overflow-hidden rounded-3xl h-56 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-orange-900 to-orange-700">
+                <div className="relative group overflow-hidden rounded-2xl h-44 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-orange-900 to-orange-700">
                   <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute inset-0 flex flex-col justify-center p-8">
-                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-2">Categoria Debate</p>
-                    <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Debate de Versículos</h3>
-                    <button className="bg-white text-black px-5 py-2 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                  <div className="absolute inset-0 flex flex-col justify-center p-6">
+                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-1">Categoria Debate</p>
+                    <h3 className="text-white text-lg font-bold mb-3">Debate de Versículos</h3>
+                    <button className="bg-white text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Ver Mais
                     </button>
                   </div>
                 </div>
 
                 {/* Card 6 - Biografia Missionária */}
-                <div className="relative group overflow-hidden rounded-3xl h-56 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-teal-900 to-teal-700">
+                <div className="relative group overflow-hidden rounded-2xl h-44 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-teal-900 to-teal-700">
                   <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute inset-0 flex flex-col justify-center p-8">
-                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-2">Categoria Biografia</p>
-                    <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Biografia Missionária</h3>
-                    <button className="bg-white text-black px-5 py-2 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                  <div className="absolute inset-0 flex flex-col justify-center p-6">
+                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-1">Categoria Biografia</p>
+                    <h3 className="text-white text-lg font-bold mb-3">Biografia Missionária</h3>
+                    <button className="bg-white text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Ver Mais
                     </button>
                   </div>
                 </div>
 
                 {/* Card 7 - Biografia WAH */}
-                <div className="relative group overflow-hidden rounded-3xl h-56 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-indigo-900 to-indigo-700">
+                <div className="relative group overflow-hidden rounded-2xl h-44 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-indigo-900 to-indigo-700">
                   <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute inset-0 flex flex-col justify-center p-8">
-                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-2">Categoria Biografia</p>
-                    <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Biografia WAH</h3>
-                    <button className="bg-white text-black px-5 py-2 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                  <div className="absolute inset-0 flex flex-col justify-center p-6">
+                    <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-1">Categoria Biografia</p>
+                    <h3 className="text-white text-lg font-bold mb-3">Biografia WAH</h3>
+                    <button className="bg-white text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Ver Mais
                     </button>
                   </div>
@@ -394,14 +394,14 @@ function Home() {
               </div>
 
               {/* Cards Adicionais - Linha Inferior */}
-              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="lg:col-span-5 grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Card 8 - Biografia de Jesus */}
                 <div className="relative group overflow-hidden rounded-3xl h-72 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-yellow-900 to-yellow-700">
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Especial</p>
                     <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Biografia de Jesus</h3>
-                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                    <button className="bg-white text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Explorar Agora
                     </button>
                   </div>
@@ -413,7 +413,7 @@ function Home() {
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Pregação</p>
                     <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">Pregador do Evangelho</h3>
-                    <button className="bg-white text-black px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
+                    <button className="bg-white text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#F6B500] transition-colors w-fit">
                       Explorar Agora
                     </button>
                   </div>

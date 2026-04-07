@@ -9,7 +9,7 @@ import Biblia from './components/biblia'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/EmbaixadoresDoRei">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

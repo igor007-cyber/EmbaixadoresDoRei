@@ -40,7 +40,7 @@ function Cadastro() {
             </button>
             <div className="reglog-text animation" style={{ '--i': 5, '--j': 5 } as React.CSSProperties}>
               <p>
-                Already have an account?{' '}
+                Você já tem Cadastro?{' '}
                 <Link 
                   to="/login" 
                   className="login-link"

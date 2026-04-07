@@ -38,7 +38,7 @@ function Login() {
             </button>
             <div className="reglog-text animation" style={{ '--i': 4, '--j': 25 } as React.CSSProperties}>
               <p>
-                Don't have an account?{' '}
+                Você não tem uma conta?{' '}
                 <a href="#" className="signup-link" onClick={(e) => { e.preventDefault(); setIsActive(true); }}>
                   Sign Up
                 </a>
@@ -73,7 +73,7 @@ function Login() {
             </button>
             <div className="reglog-text animation" style={{ '--i': 22, '--j': 5 } as React.CSSProperties}>
               <p>
-                Already have an account?{' '}
+                Você já tem Cadastro?{' '}
                 <a href="#" className="login-link" onClick={(e) => { e.preventDefault(); setIsActive(false); }}>
                   Login
                 </a>
@@ -85,7 +85,7 @@ function Login() {
         {/* Info section */}
         <div className="info-text login">
           <h2 className="animation" style={{ '--i': 0, '--j': 20 } as React.CSSProperties}>
-            Welcome Back!
+            Bem vindo de volta
           </h2>
           <p className="animation" style={{ '--i': 1, '--j': 21 } as React.CSSProperties}>
             Embaixadores do Rei

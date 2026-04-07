@@ -336,6 +336,10 @@
   transition-delay: calc(0.1s * var(--j));
 }
 
+.main-container.active .info-text.login {
+  pointer-events: none;
+}
+
 .main-container.active .info-text.login .animation {
   transform: translateX(120%);
   opacity: 0;
