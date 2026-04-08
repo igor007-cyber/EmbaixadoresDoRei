@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Login/Login.css'
 
 function Cadastro() {
+  const navigate = useNavigate()
   return (
     <div className="login-page">
       {/* Botão Voltar */}
@@ -19,7 +20,7 @@ function Cadastro() {
           <h2 className="animation" style={{ '--i': 0, '--j': 0 } as React.CSSProperties}>
             Sign Up
           </h2>
-          <form action="#">
+          <form onSubmit={(e) => { e.preventDefault(); navigate('/dashboard') }}>
             <div className="input-box animation" style={{ '--i': 1, '--j': 1 } as React.CSSProperties}>
               <input type="text" required />
               <label htmlFor="text">Username</label>

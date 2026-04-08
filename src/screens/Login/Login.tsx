@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Login.css'
 
 function Login() {
   const [isActive, setIsActive] = useState(false)
+  const navigate = useNavigate()
 
   return (
     <div className="login-page">
@@ -22,7 +23,7 @@ function Login() {
           <h2 className="animation" style={{ '--i': 0, '--j': 21 } as React.CSSProperties}>
             Login
           </h2>
-          <form action="#">
+          <form onSubmit={(e) => { e.preventDefault(); navigate('/dashboard') }}>
             <div className="input-box animation" style={{ '--i': 1, '--j': 22 } as React.CSSProperties}>
               <input type="text" required />
               <label htmlFor="text">Username</label>
@@ -52,7 +53,7 @@ function Login() {
           <h2 className="animation" style={{ '--i': 17, '--j': 0 } as React.CSSProperties}>
             Sign Up
           </h2>
-          <form action="#">
+          <form onSubmit={(e) => { e.preventDefault(); navigate('/dashboard') }}>
             <div className="input-box animation" style={{ '--i': 18, '--j': 1 } as React.CSSProperties}>
               <input type="text" required />
               <label htmlFor="text">Username</label>
