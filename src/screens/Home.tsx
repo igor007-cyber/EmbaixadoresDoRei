@@ -304,6 +304,7 @@ function Home() {
               <div className="lg:col-span-2 space-y-6">
                 {/* Card 1 - Conhecimentos gerais da Bíblia */}
                 <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-blue-900 to-blue-700">
+                  <img src="https://i.imgur.com/J65zdQe.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Geral</p>
@@ -316,6 +317,7 @@ function Home() {
 
                 {/* Card 2 - Conhecimentos gerais da Organização */}
                 <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-purple-900 to-purple-700">
+                  <img src="https://i.imgur.com/TMbk8Xc.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Organizacional</p>
@@ -331,6 +333,7 @@ function Home() {
               <div className="lg:col-span-2 space-y-6">
                 {/* Card 3 - Agilidade Bíblica */}
                 <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-green-900 to-green-700">
+                  <img src="https://i.imgur.com/gRZtaIv.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Velocidade</p>
@@ -343,6 +346,7 @@ function Home() {
 
                 {/* Card 4 - Montagem Bíblica */}
                 <div className="relative group overflow-hidden rounded-3xl h-96 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-red-900 to-red-700">
+                  <img src="https://i.imgur.com/xaieIhH.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Prática</p>
@@ -358,6 +362,7 @@ function Home() {
               <div className="lg:col-span-1 space-y-4">
                 {/* Card 5 - Debate de Versículos */}
                 <div className="relative group overflow-hidden rounded-2xl h-44 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-orange-900 to-orange-700">
+                  <img src="https://i.imgur.com/K3pZlfU.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-center p-6">
                     <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-1">Categoria Debate</p>
@@ -370,6 +375,7 @@ function Home() {
 
                 {/* Card 6 - Biografia Missionária */}
                 <div className="relative group overflow-hidden rounded-2xl h-44 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-teal-900 to-teal-700">
+                  <img src="https://i.imgur.com/eEJW5wG.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-center p-6">
                     <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-1">Categoria Biografia</p>
@@ -382,6 +388,7 @@ function Home() {
 
                 {/* Card 7 - Biografia WAH */}
                 <div className="relative group overflow-hidden rounded-2xl h-44 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-indigo-900 to-indigo-700">
+                  <img src="https://i.imgur.com/mVkPDl8.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-center p-6">
                     <p className="text-[#F6B500] text-xs font-bold uppercase tracking-wider mb-1">Categoria Biografia</p>
@@ -397,6 +404,7 @@ function Home() {
               <div className="lg:col-span-5 grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Card 8 - Biografia de Jesus */}
                 <div className="relative group overflow-hidden rounded-3xl h-72 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-yellow-900 to-yellow-700">
+                  <img src="https://i.imgur.com/fCBfyJj.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Especial</p>
@@ -409,6 +417,7 @@ function Home() {
 
                 {/* Card 9 - Pregador do Evangelho */}
                 <div className="relative group overflow-hidden rounded-3xl h-72 cursor-pointer transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-pink-900 to-pink-700">
+                  <img src="https://i.imgur.com/TQZVn5e.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300" />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-8">
                     <p className="text-[#F6B500] text-sm font-bold uppercase tracking-wider mb-2">Categoria Pregação</p>
