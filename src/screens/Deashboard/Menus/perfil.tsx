@@ -60,7 +60,7 @@ export default function PerfilView({
         {!editandoPerfil ? (
           <button
             onClick={() => { setPerfilTemp(perfil); setEditandoPerfil(true) }}
-            className="flex items-center gap-2 px-5 py-2.5 bg-[#F6B500] hover:bg-[#FFD700] text-black font-bold rounded-xl transition shadow-lg shadow-[#F6B500]/20"
+            className="flex items-center gap-2 px-5 py-2.5 bg-[#F6B500] hover:bg-[#FFD700] text-white font-bold rounded-xl transition shadow-lg shadow-[#F6B500]/20"
           >
             ✏️ Editar Perfil
           </button>
