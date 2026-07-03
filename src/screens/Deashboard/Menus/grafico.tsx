@@ -45,8 +45,8 @@ export default function Grafico({ embaixadores, conselheiros, atividades }: Graf
     lineChart.current?.destroy()
 
     const nomes = embaixadores.map(e => e.nome.split(' ')[0])
-    const totais = embaixadores.map((_, i) => atividades.filter(a => a.embaixadorIndex === i).length)
-    const feitas = embaixadores.map((_, i) => atividades.filter(a => a.embaixadorIndex === i && a.feito).length)
+    const totais = embaixadores.map((e) => atividades.filter(a => a.embaixadorId === e.id).length)
+    const feitas = embaixadores.map((e) => atividades.filter(a => a.embaixadorId === e.id && a.feito).length)
 
     lineChart.current = new ApexCharts(lineRef.current, {
       series: [

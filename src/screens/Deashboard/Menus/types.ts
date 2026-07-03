@@ -1,4 +1,7 @@
+export type PerfilRole = 'admin' | 'usuario'
+
 export interface Perfil {
+  id: string
   username: string
   nomeConselheiro: string
   nomeEmbaixada: string
@@ -7,19 +10,22 @@ export interface Perfil {
   cidade: string
   estado: string
   nomeIgreja: string
+  role: PerfilRole
 }
 
 export interface Embaixador {
+  id: string
   nome: string
   email: string
   idade: string
   telefone: string
   nomeResponsavel: string
   telefoneResponsavel: string
-  manual: 'Arauto' | 'Escudeiro' | 'Sênior' | 'Emérito' | ''
+  manual: 'Arauto' | 'Escudeiro' | 'Sênior' | 'Emérito' | 'Futuro Membro' | ''
 }
 
 export interface Conselheiro {
+  id: string
   nome: string
   idade: string
   telefone: string
@@ -44,20 +50,56 @@ export type RegistrosPresenca = Record<string, Record<string, PresencaEntry>>
 export interface Atividade {
   id: string
   descricao: string
-  embaixadorIndex: number
+  embaixadorId: string
   feito: boolean
 }
 
+export const emptyPerfil: Perfil = {
+  id: '',
+  username: '',
+  nomeConselheiro: '',
+  nomeEmbaixada: '',
+  email: '',
+  quantidadePessoas: '',
+  cidade: '',
+  estado: '',
+  nomeIgreja: '',
+  role: 'usuario',
+}
+
 export const emptyEmbaixador: Embaixador = {
-  nome: '', email: '', idade: '', telefone: '',
-  nomeResponsavel: '', telefoneResponsavel: '', manual: ''
+  id: '',
+  nome: '',
+  email: '',
+  idade: '',
+  telefone: '',
+  nomeResponsavel: '',
+  telefoneResponsavel: '',
+  manual: '',
 }
 
 export const emptyConselheiro: Conselheiro = {
-  nome: '', idade: '', telefone: '', temCurso: ''
+  id: '',
+  nome: '',
+  idade: '',
+  telefone: '',
+  temCurso: '',
 }
 
-export const MESES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
+export const MESES = [
+  'Janeiro',
+  'Fevereiro',
+  'Março',
+  'Abril',
+  'Maio',
+  'Junho',
+  'Julho',
+  'Agosto',
+  'Setembro',
+  'Outubro',
+  'Novembro',
+  'Dezembro',
+]
 
 export function diasNoMes(mes: number, ano: number) {
   return new Date(ano, mes + 1, 0).getDate()

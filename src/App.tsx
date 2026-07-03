@@ -7,6 +7,7 @@ import Torneio from './screens/Torneio'
 import Jogos from './components/Jogos'
 import Biblia from './components/biblia'
 import Deashboard from './screens/Deashboard/deashboard'
+import ProtectedRoute from './components/ProtectedRoute'
 
 function App() {
   return (
@@ -18,7 +19,14 @@ function App() {
         <Route path="/torneios" element={<Torneio />} />
         <Route path="/torneios/:id" element={<Jogos />} />
         <Route path="/biblia/:id" element={<Biblia />} />
-        <Route path="/dashboard" element={<Deashboard />} />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Deashboard />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </Router>
   )

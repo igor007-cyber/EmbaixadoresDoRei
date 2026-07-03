@@ -166,7 +166,7 @@ export default function Inicial({
             ) : (
               <ul className="divide-y divide-white/5 max-h-64 overflow-y-auto">
                 {pendentes.map(at => {
-                  const emb = embaixadores[at.embaixadorIndex]
+                  const emb = embaixadores.find((item) => item.id === at.embaixadorId)
                   return (
                     <li key={at.id} className="flex items-center gap-4 px-5 py-3 hover:bg-white/5 transition">
                       <span className="w-2 h-2 rounded-full bg-red-400 flex-shrink-0" />

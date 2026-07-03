@@ -6,7 +6,4 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/EmbaixadoresDoRei/',
-  server: {
-    historyApiFallback: true,
-  },
 })
