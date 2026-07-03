@@ -213,6 +213,10 @@ function Deashboard() {
   }
 
   useEffect(() => {
+    // Carregamento inicial e reacao a mudancas de sessao. carregarPerfil e
+    // recriada a cada render, entao nao entra nas dependencias (causaria loop);
+    // os setState de loading dentro dela sao intencionais na montagem.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     void carregarPerfil()
 
     const {
@@ -229,6 +233,7 @@ function Deashboard() {
     return () => {
       subscription.unsubscribe()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router])
 
   async function salvarPerfil() {
@@ -468,7 +473,7 @@ function Deashboard() {
     { key: 'perfil', label: 'Perfil', icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-5 h-5 shrink-0"><path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg> },
   ]
 
-  const SidebarContent = ({ mobile = false }: { mobile?: boolean }) => {
+  function renderSidebar(mobile = false) {
     const collapsed = !mobile && sidebarCollapsed
 
     return (
@@ -518,7 +523,7 @@ function Deashboard() {
     <div className="min-h-screen bg-[#0A0A1A] text-white">
       <div className="flex h-screen">
         <aside className={`hidden lg:flex ${sidebarCollapsed ? 'w-20' : 'w-64'} bg-gradient-to-b from-[#F6B500] to-[#FFD700] text-black flex-col p-4 shadow-xl transition-all duration-300`}>
-          <SidebarContent />
+          {renderSidebar()}
         </aside>
 
         <button className="lg:hidden fixed top-4 left-4 z-40 bg-gradient-to-r from-[#F6B500] to-[#FFD700] text-black p-3 rounded-full shadow-lg hover:scale-110 transition" onClick={() => setSidebarOpen(!sidebarOpen)}>
@@ -529,7 +534,7 @@ function Deashboard() {
           <div className="lg:hidden fixed inset-0 z-30">
             <div className="absolute inset-0 bg-black/60" onClick={() => setSidebarOpen(false)} />
             <aside className="relative w-64 h-full bg-gradient-to-b from-[#F6B500] to-[#FFD700] text-black flex flex-col p-4 shadow-xl">
-              <SidebarContent mobile />
+              {renderSidebar(true)}
             </aside>
           </div>
         )}

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm outdated *)",
+      "Bash(npm update *)",
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(node -e \"import\\('eslint-plugin-react-hooks'\\).then\\(m=>{const c=m.default.configs; console.log\\('config keys:', Object.keys\\(c\\)\\); for\\(const k of Object.keys\\(c\\)\\){const v=c[k]; console.log\\('---',k,'plugins type:', Array.isArray\\(v.plugins\\)?'ARRAY':typeof v.plugins\\)}}\\)\")",
+      "Bash(node -e \"import\\('eslint-plugin-react-hooks'\\).then\\(m=>{const f=m.default.configs.flat; console.log\\('flat keys:', Object.keys\\(f\\)\\); for\\(const k of Object.keys\\(f\\)\\){console.log\\('---',k,'plugins:', typeof f[k].plugins\\)}}\\)\")",
+      "Bash(grep -oE \"[a-z-]+/[a-z-]+$\")",
+      "Bash(grep -vE \"^$\")",
+      "Bash(npx eslint *)",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\).on\\('end',\\(\\)=>{const j=JSON.parse\\(d\\);for\\(const f of j\\){for\\(const m of f.messages\\){console.log\\(f.filePath.split\\('EmbaixadoresDoRei\\\\\\\\\\\\\\\\'\\).pop\\(\\)+':'+m.line+':'+m.column+'  '+m.ruleId+'  '+m.message.slice\\(0,60\\)\\)}}}\\)\")",
+      "Bash(npx tsc *)",
+      "mcp__claude_ai_Supabase__list_projects",
+      "PowerShell(Get-Process node,esbuild,vite -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='node.exe'\")"
+    ]
+  }
+}

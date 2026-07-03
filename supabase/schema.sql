@@ -501,7 +501,8 @@ on public.atividades
 for delete
 using (auth.uid() = profile_id or public.is_admin());
 
-create or replace view public.progresso_embaixadores as
+create or replace view public.progresso_embaixadores
+with (security_invoker = true) as
 select
   e.id as embaixador_id,
   e.profile_id,

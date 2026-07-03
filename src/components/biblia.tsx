@@ -1,8 +1,31 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
+type JogoBiblico = {
+  id: number
+  time1: string
+  time2: string
+  placar1: number | null
+  placar2: number | null
+  data: string
+  status: string
+}
+
+type TorneioBiblico = {
+  id: string
+  nome: string
+  tipo: string
+  status: string
+  participantes: number
+  fase?: string
+  dataInicio?: string
+  campeao?: string
+  dataConclusao?: string
+  jogos: JogoBiblico[]
+}
+
 // Dados dos torneios bíblicos
-const torneiosBiblicosData: { [key: string]: any } = {
+const torneiosBiblicosData: Record<string, TorneioBiblico> = {
   'quiz-biblico-nacional': {
     id: 'quiz-biblico-nacional',
     nome: 'Quiz Bíblico Nacional',
@@ -347,7 +370,7 @@ function Biblia() {
                 </div>
                 
                 <div className="p-6 space-y-4">
-                  {torneio.jogos.filter((j: any) => j.status === 'Agendado').slice(0, 4).map((jogo: any) => (
+                  {torneio.jogos.filter((j) => j.status === 'Agendado').slice(0, 4).map((jogo) => (
                     <div key={jogo.id} className="border-l-4 border-purple-500 pl-4 py-2 hover:bg-gray-50 transition-colors">
                       <div className="flex items-center justify-between">
                         <div className="flex-1">
@@ -382,7 +405,7 @@ function Biblia() {
               </div>
               
               <div className="p-6 space-y-4">
-                {torneio.jogos.filter((j: any) => j.placar1 !== null).map((jogo: any) => (
+                {torneio.jogos.filter((j) => j.placar1 !== null).map((jogo) => (
                   <div key={jogo.id} className="border-l-4 border-green-500 pl-4 py-2 hover:bg-gray-50 transition-colors">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex-1">
@@ -390,11 +413,11 @@ function Biblia() {
                       </div>
                       <div className="mx-4 bg-gray-100 px-4 py-2 rounded-lg">
                         <div className="flex items-center gap-3">
-                          <span className={`text-2xl font-black ${jogo.placar1 > jogo.placar2 ? 'text-green-600' : 'text-gray-900'}`}>
+                          <span className={`text-2xl font-black ${(jogo.placar1 ?? 0) > (jogo.placar2 ?? 0) ? 'text-green-600' : 'text-gray-900'}`}>
                             {jogo.placar1}
                           </span>
                           <span className="text-xl font-bold text-gray-400">×</span>
-                          <span className={`text-2xl font-black ${jogo.placar2 > jogo.placar1 ? 'text-green-600' : 'text-gray-900'}`}>
+                          <span className={`text-2xl font-black ${(jogo.placar2 ?? 0) > (jogo.placar1 ?? 0) ? 'text-green-600' : 'text-gray-900'}`}>
                             {jogo.placar2}
                           </span>
                         </div>

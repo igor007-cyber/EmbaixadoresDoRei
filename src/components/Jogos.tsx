@@ -1,8 +1,45 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
+type TimeGrupo = {
+  pos: number
+  time: string
+  p: number
+  j: number
+  v: number
+  e: number
+  d: number
+  gp: number
+  gc: number
+  sg: number
+  zona: string
+}
+
+type Jogo = {
+  id: number
+  time1: string
+  time2: string
+  placar1: number | null
+  placar2: number | null
+  data: string
+  status: string
+}
+
+type Torneio = {
+  id: string
+  nome: string
+  tipo: string
+  status: string
+  participantes: number
+  fase?: string
+  dataInicio?: string
+  campeao?: string
+  dataConclusao?: string
+  jogos: Jogo[]
+}
+
 // Dados completos dos grupos - Copa Embaixadores 2025
-const gruposData: { [key: string]: any } = {
+const gruposData: Record<string, TimeGrupo[]> = {
   'A': [
     { pos: 1, time: 'Embaixada São Paulo', p: 6, j: 2, v: 2, e: 0, d: 0, gp: 7, gc: 2, sg: 5, zona: 'classificado' },
     { pos: 2, time: 'Embaixada Salvador', p: 4, j: 2, v: 1, e: 1, d: 0, gp: 4, gc: 2, sg: 2, zona: 'classificado' },
@@ -36,7 +73,7 @@ const gruposData: { [key: string]: any } = {
 }
 
 // Dados dos torneios esportivos
-const torneiosData: { [key: string]: any } = {
+const torneiosData: Record<string, Torneio> = {
   'copa-embaixadores-2025': {
     id: 'copa-embaixadores-2025',
     nome: 'Copa Embaixadores do Rei 2025',
@@ -732,7 +769,7 @@ function Jogos() {
                 </div>
                 
                 <div className="p-6 space-y-4">
-                  {torneio.jogos.filter((j: any) => j.status === 'Agendado').slice(0, 4).map((jogo: any) => (
+                  {torneio.jogos.filter((j) => j.status === 'Agendado').slice(0, 4).map((jogo) => (
                     <div key={jogo.id} className="border-l-4 border-blue-500 pl-4 py-2 hover:bg-gray-50 transition-colors">
                       <div className="flex items-center justify-between">
                         <div className="flex-1">
@@ -767,7 +804,7 @@ function Jogos() {
               </div>
               
               <div className="p-6 space-y-4">
-                {torneio.jogos.filter((j: any) => j.placar1 !== null).map((jogo: any) => (
+                {torneio.jogos.filter((j) => j.placar1 !== null).map((jogo) => (
                   <div key={jogo.id} className="border-l-4 border-green-500 pl-4 py-2 hover:bg-gray-50 transition-colors">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex-1">
@@ -775,11 +812,11 @@ function Jogos() {
                       </div>
                       <div className="mx-4 bg-gray-100 px-4 py-2 rounded-lg">
                         <div className="flex items-center gap-3">
-                          <span className={`text-2xl font-black ${jogo.placar1 > jogo.placar2 ? 'text-green-600' : 'text-gray-900'}`}>
+                          <span className={`text-2xl font-black ${(jogo.placar1 ?? 0) > (jogo.placar2 ?? 0) ? 'text-green-600' : 'text-gray-900'}`}>
                             {jogo.placar1}
                           </span>
                           <span className="text-xl font-bold text-gray-400">×</span>
-                          <span className={`text-2xl font-black ${jogo.placar2 > jogo.placar1 ? 'text-green-600' : 'text-gray-900'}`}>
+                          <span className={`text-2xl font-black ${(jogo.placar2 ?? 0) > (jogo.placar1 ?? 0) ? 'text-green-600' : 'text-gray-900'}`}>
                             {jogo.placar2}
                           </span>
                         </div>
@@ -916,7 +953,7 @@ function Jogos() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
-                    {gruposData[grupoExpandido].map((time: any) => (
+                    {gruposData[grupoExpandido].map((time) => (
                       <tr key={time.pos} className="hover:bg-gray-50 transition-colors">
                         <td className="px-4 py-4">
                           <div className={`w-10 h-10 rounded flex items-center justify-center font-bold text-sm ${
