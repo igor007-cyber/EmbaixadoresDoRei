@@ -5,5 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/EmbaixadoresDoRei/',
+  // Na Vercel o app roda na raiz do dominio; no GitHub Pages roda sob /EmbaixadoresDoRei/.
+  base: process.env.VERCEL ? '/' : '/EmbaixadoresDoRei/',
 })
