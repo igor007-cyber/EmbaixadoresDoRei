@@ -1,0 +1,74 @@
+<!--
+  Template de email — Redefinir Senha (Embaixadores do Rei)
+  Cole este HTML em: Supabase > Authentication > Email Templates > Reset Password
+  A variavel {{ .ConfirmationURL }} e substituida automaticamente pelo link seguro do Supabase.
+-->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0;padding:0;background-color:#0a0a1a;font-family:Arial,Helvetica,sans-serif;">
+  <tr>
+    <td align="center" style="padding:32px 16px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background:linear-gradient(135deg,#0a0a1a,#13132a);border:1px solid rgba(246,181,0,0.25);border-radius:18px;overflow:hidden;">
+
+        <!-- Cabecalho -->
+        <tr>
+          <td align="center" style="padding:40px 32px 16px;">
+            <div style="display:inline-block;width:64px;height:64px;line-height:64px;border-radius:50%;background:#f6b500;color:#000000;font-size:32px;font-weight:bold;">&#128273;</div>
+            <h1 style="margin:20px 0 0;color:#ffffff;font-size:22px;font-weight:bold;">Redefinir sua senha</h1>
+            <p style="margin:6px 0 0;color:#f6b500;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:bold;">Embaixadores do Rei</p>
+          </td>
+        </tr>
+
+        <!-- Corpo -->
+        <tr>
+          <td style="padding:8px 32px 0;">
+            <p style="color:rgba(255,255,255,0.75);font-size:15px;line-height:1.6;text-align:center;margin:16px 0;">
+              Recebemos um pedido para redefinir a senha da sua conta. Clique no botao abaixo para criar uma nova senha.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Botao -->
+        <tr>
+          <td align="center" style="padding:16px 32px 8px;">
+            <a href="{{ .ConfirmationURL }}" target="_blank"
+               style="display:inline-block;background:#f6b500;color:#000000;font-size:16px;font-weight:bold;text-decoration:none;padding:14px 40px;border-radius:12px;letter-spacing:0.5px;">
+              Criar nova senha
+            </a>
+          </td>
+        </tr>
+
+        <!-- Link alternativo -->
+        <tr>
+          <td style="padding:16px 32px 0;">
+            <p style="color:rgba(255,255,255,0.45);font-size:12px;line-height:1.6;text-align:center;margin:8px 0;">
+              Se o botao nao funcionar, copie e cole este link no seu navegador:
+            </p>
+            <p style="text-align:center;margin:4px 0 16px;">
+              <a href="{{ .ConfirmationURL }}" target="_blank" style="color:#f6b500;font-size:12px;word-break:break-all;">{{ .ConfirmationURL }}</a>
+            </p>
+          </td>
+        </tr>
+
+        <!-- Aviso -->
+        <tr>
+          <td style="padding:8px 32px 32px;">
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:16px;">
+              <p style="color:rgba(255,255,255,0.4);font-size:12px;line-height:1.6;text-align:center;margin:0;">
+                Se voce nao solicitou a redefinicao de senha, pode ignorar este email com seguranca &mdash; sua senha continuara a mesma. Este link expira em breve por motivos de seguranca.
+              </p>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Rodape -->
+        <tr>
+          <td align="center" style="padding:0 32px 28px;">
+            <p style="color:rgba(255,255,255,0.3);font-size:11px;margin:0;">
+              &copy; Embaixadores do Rei
+            </p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>

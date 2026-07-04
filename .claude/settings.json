@@ -14,7 +14,8 @@
       "Bash(npx tsc *)",
       "mcp__claude_ai_Supabase__list_projects",
       "PowerShell(Get-Process node,esbuild,vite -ErrorAction SilentlyContinue)",
-      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='node.exe'\")"
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='node.exe'\")",
+      "mcp__claude_ai_Supabase__execute_sql"
     ]
   }
 }

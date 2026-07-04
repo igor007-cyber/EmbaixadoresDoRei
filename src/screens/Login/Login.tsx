@@ -73,6 +73,22 @@ function Login() {
                 aria-label={mostrarSenha ? 'Ocultar senha' : 'Mostrar senha'}
               ></i>
             </div>
+            <div
+              className="animation"
+              style={{ '--i': 3, '--j': 24, textAlign: 'right', marginTop: 6 } as React.CSSProperties}
+            >
+              <a
+                href="#"
+                className="signup-link"
+                style={{ fontSize: 13 }}
+                onClick={(e) => {
+                  e.preventDefault()
+                  navigate('/esqueceu-senha')
+                }}
+              >
+                Esqueceu a senha?
+              </a>
+            </div>
             {erro && (
               <p
                 className="animation"
